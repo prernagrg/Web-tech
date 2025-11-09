@@ -1,0 +1,14 @@
+#header2{
+    color: white;
+}
+input[type="text"]{
+    border: 2px solid #000000;
+    background-color: aqua;
+    color: white;
+}
+ul li{
+    background-color: blue;
+}
+h3, h4{
+    text-align: center;
+}

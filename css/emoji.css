@@ -5,3 +5,39 @@
  li::after{
     content: "❤️💕";
 }
+ li::marker{
+    color: red;
+ }
+
+ p::first-letter{
+    color: red;
+    font-size: 2rem;
+ }
+
+ i::selection{
+    background-color: yellow;
+    font-size: 20px;
+ }
+/*pseudo class*/
+a:link{
+    color: red;
+}
+a:visited{
+    color: gray;
+}
+a:active{
+    color: blue;
+}
+a:hover{
+    font-size: 20px;
+}
+input{
+    margin: 10px;
+}
+input:focus{
+    color: brown;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color:  red;
+}

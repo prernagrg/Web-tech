@@ -1,0 +1,7 @@
+ /*pseudo elements :: before & after*/
+ li::before{
+    content: "😊";
+}
+ li::after{
+    content: "❤️💕";
+}

@@ -62,3 +62,24 @@ button.innerHTML = "Hello world"
 button.addEventListener('click', function(){
     alert("this is a button");
 })
+// Arrow Function
+const greet = (name) => {
+  return "Hello, " + name + "!";
+};
+
+// Short form for single expressions
+const greetShort = name => "Hello, " + name + "!";
+
+console.log(greetShort("Charlie")); 
+
+const text = "Call me at 555-1234";
+const phonePattern = /\d{3}-\d{4}/;
+console.log(text.match(phonePattern)); // ["555-1234"]
+
+const email = "user@example.com";
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+console.log(emailPattern.test(email)); // true
+
+const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+console.log(pattern.test("MyPass123!")); // true
+console.log(pattern.test("password")); // false

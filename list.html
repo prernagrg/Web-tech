@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .Notebook li::marker {
+        content: "@ ";
+      }
+    </style>
   </head>
   <body>
     <!-- <h1>Types of list</h1>
@@ -45,7 +50,7 @@
             </ul>
         </li>
     </ol> -->
-    <ol>
+    <!-- <ol>
       <li>
         Apple
         <ol type="a">
@@ -56,6 +61,30 @@
       <li>Banana</li>
       <li>Citrus Fruits</li>
       <li>Berry Fruits</li>
+    </ol> -->
+
+    <ol type="i">
+      <li>
+        Notebook
+        <ul class="Notebook">
+          <li>Lenovo IdeaPad</li>
+          <li>Dell Inspiron</li>
+        </ul>
+      </li>
+      <li>
+        Laptop
+        <ol type="1">
+          <li>MAC</li>
+          <li>Dell</li>
+        </ol>
+      </li>
+      <li>
+        Mobile
+        <ul style="list-style: disc">
+          <li>Samsung</li>
+          <li>I-phone</li>
+        </ul>
+      </li>
     </ol>
   </body>
 </html>

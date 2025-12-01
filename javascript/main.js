@@ -56,30 +56,56 @@
 //     alert('Button Clicked')
 // }
 
-const button = document.querySelectorAll(".multiplebtn");
+// const button = document.querySelectorAll(".multiplebtn");
 
-button.innerHTML = "Hello world"
-button.addEventListener('click', function(){
-    alert("this is a button");
+// button.innerHTML = "Hello world"
+// button.addEventListener('click', function(){
+//     alert("this is a button");
+// })
+// // Arrow Function
+// const greet = (name) => {
+//   return "Hello, " + name + "!";
+// };
+
+// // Short form for single expressions
+// const greetShort = name => "Hello, " + name + "!";
+
+// console.log(greetShort("Charlie")); 
+
+// const text = "Call me at 555-1234";
+// const phonePattern = /\d{3}-\d{4}/;
+// console.log(text.match(phonePattern)); // ["555-1234"]
+
+// const email = "user@example.com";
+// const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// console.log(emailPattern.test(email)); // true
+
+// const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+// console.log(pattern.test("MyPass123!")); // true
+// console.log(pattern.test("password")); // false
+
+// try{
+// throw new Error("New error");
+// }
+// catch(error){
+//   console.log("error");
+// }
+
+// const obj = {
+//   "name": "ram",
+//    "age":18
+// }
+// console.log(obj);
+// console.log(JSON.stringify(obj));
+
+// const strVAl = JSON.stringify(obj)
+// console.log(strVAl);
+// console.log(JSON.parse(strVAl))
+
+// fetch('https://dummyjson.com/products')
+// .then(response=>response.json())
+// .then(data=>console.log(data));
+$('#query').click(function()
+{
+  alert("This is a jquery selector");
 })
-// Arrow Function
-const greet = (name) => {
-  return "Hello, " + name + "!";
-};
-
-// Short form for single expressions
-const greetShort = name => "Hello, " + name + "!";
-
-console.log(greetShort("Charlie")); 
-
-const text = "Call me at 555-1234";
-const phonePattern = /\d{3}-\d{4}/;
-console.log(text.match(phonePattern)); // ["555-1234"]
-
-const email = "user@example.com";
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-console.log(emailPattern.test(email)); // true
-
-const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-console.log(pattern.test("MyPass123!")); // true
-console.log(pattern.test("password")); // false

@@ -1,5 +1,5 @@
 
-document.querySelector(".form").addEventListener("submit", function (event) {
+document.querySelector(".form").addEventListener('submit', function (event) {
 
     let email = document.getElementById("email").value;
 
@@ -7,3 +7,4 @@ document.querySelector(".form").addEventListener("submit", function (event) {
 
     alert("Email: " + email + "\nPassword: " + password);
 });
+ 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Validation</title>
+  </head>
+  <body>
+    <form>
+      <label>Email:</label><br />
+      <input type="text" id="email" oninput="validateEmail()" />
+      <p id="msg"></p>
+    </form>
+
+    <script>
+      function validateEmail() {
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("msg");
+
+        let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === "") {
+          message.innerHTML = "";
+        } else if (pattern.test(email)) {
+          message.innerHTML = "Valid Email";
+          message.style.color = "green";
+        } else {
+          message.innerHTML = "Invalid Email";
+          message.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

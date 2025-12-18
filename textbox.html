@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .append input {
+        display: block;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="append">
+      <div id="btn">
+        <button id="addbtn">Add</button>
+        <button id="deletebtn">Delete</button>
+      </div>
+    </div>
+
+    <script>
+      let append = document.querySelector(".append");
+      let addbtn = document.querySelector("#addbtn");
+      let deletebtn = document.querySelector("#deletebtn");
+
+      addbtn.addEventListener("click", function () {
+        let input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "Enter a text";
+        append.appendChild(input);
+      });
+
+      deletebtn.addEventListener("click", function () {
+        let inputs = append.getElementsByTagName("input");
+        if (inputs.length > 0) {
+          append.removeChild(inputs[inputs.length - 1]);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -39,5 +39,39 @@
         <option value="china">China</option>
       </select>
     </form>
+    <input onsubmit="validateForm(e)">
+      <label for=""></label>
+      <input type="text" />
+      <label for="volume">Volume:</label>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="100"
+        value="50"
+      />
+      <span id="value">50%</span>
+
+      <script>
+        const slider = document.getElementById("volume");
+        const output = document.getElementById("value");
+
+        slider.addEventListener("input", () => {
+          output.textContent = slider.value + "%";
+        });
+      </script>
+
+      <select name="" id="">
+        <option value="" hidden disabled selected>choose an option</option>
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+      </select>
+      <input type="radio" name="gender" value="male">Male</input>
+      <input type="radio" name="gender" value="female">Female</input>
+      <input type="radio" name="gender" value="rathernotsay">Rather not say</input>
+      <button type="submit"></button>
+    </form>
   </body>
 </html>

@@ -105,7 +105,32 @@
 // fetch('https://dummyjson.com/products')
 // .then(response=>response.json())
 // .then(data=>console.log(data));
-$('#query').click(function()
-{
-  alert("This is a jquery selector");
-})
+// $('#query').click(function()
+// {
+//   alert("This is a jquery selector");
+// })
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Enter marks: ", (marks) => {
+  marks = Number(marks);
+
+  if (marks >= 90) {
+    console.log("Grade A");
+  } else if (marks >= 80) {
+    console.log("Grade B");
+  } else if (marks >= 70) {
+    console.log("Grade C");
+  } else if (marks >= 60) {
+    console.log("Grade D");
+  } else {
+    console.log("Grade F");
+  }
+
+  rl.close();
+});

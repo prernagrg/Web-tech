@@ -6,15 +6,13 @@
     <title>Document</title>
     <style>
       .container {
-        display: flex;
-        padding: 20px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 15px;
       }
       .box {
-        margin: 2px;
         height: 200px;
-        width: 200px;
-        background-color: red;
+        background-color: aqua;
         align-content: center;
         text-align: center;
       }
@@ -22,9 +20,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="box">One</div>
+      <div class="box">one</div>
       <div class="box">Two</div>
       <div class="box">Three</div>
+      <div class="box">Four</div>
     </div>
   </body>
 </html>
